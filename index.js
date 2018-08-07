@@ -164,9 +164,9 @@ client.on('message', msg => {
   });
 
 client.on('guildMemberAdd', member => {
-    var joinrole = member.guild.roles.find('name', '|| 𝕰lite Membru ||');
+    var joinrole = member.guild.roles.find('name', '|| 𝑨fter - Members ||');
     member.addRole(joinrole);
-    let channel  = member.guild.channels.find('name', '🤗【𝖂elcome-𝕲oodbye】😢');
+    let channel  = member.guild.channels.find('name', '💬welcome-bye');
     let memberavatar  = member.user.avatarURL
         if (!channel) return;
         let embed = new Discord.RichEmbed()
@@ -180,7 +180,7 @@ client.on('guildMemberAdd', member => {
 });
 
 client.on('guildMemberRemove', member => {
-    let channel = member.guild.channels.find('name', '🤗【𝖂elcome-𝕲oodbye】😢');
+    let channel = member.guild.channels.find('name', '💬welcome-bye');
     let memberavatar = member.user.avatarURL
         if (!channel) return;
         let embed = new Discord.RichEmbed()
